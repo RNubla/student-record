@@ -1,10 +1,23 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div>
+    <nav
+      class="navbar navbar-dark bg-primary justify-content-between flex-nowrap flex-row"
+    >
+      <div class="container">
+        <a href="" class="navbar-brand float-left">MEVN Stack Example</a>
+        <ul class="nav navbar-nav flex-row float-right">
+          <li class="nav-item">
+            <routerLink class="nav-link pr-3" to="/">Create Student</routerLink>
+          </li>
+          <li class="nav-item">
+            <routerLink class="nav-link" to="/view">View Students</routerLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <router-view></router-view>
     </div>
-    <router-view />
   </div>
 </template>
 
